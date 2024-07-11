@@ -233,7 +233,7 @@ END$$;`,
 const log =
   process.env.LOGGER === "true"
     ? console.debug
-    : (_message?: any, ..._optionalParams: any[]) => {}
+    : (_message?: any, ..._optionalParams: any[]) => { }
 
 export const handler = async (
   event:
